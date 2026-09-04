@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang Seung Gyu | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header" id="site-header">
+        <nav class="nav container">
+            <a class="logo" href="#hero">BSG</a>
+            <button class="menu-button" id="menu-button" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-button" id="theme-button" type="button">
+                    <span id="theme-icon">☾</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="hero">
+            <div class="hero-content reveal">
+                <p class="eyebrow"> BACKEND / WEB DEVELOPER</p>
+                <h1>안녕하세요.<br><strong>방승규</strong>입니다.</h1>
+                <p class="hero-copy">
+                    실제로 겪은 불편을 기술적인 문제로 정의하고,
+                    직접 해결하면서 배우는 개발자입니다.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button primary" href="#projects">프로젝트 보기</a>
+                    <a class="button secondary" href="#contact">연락하기</a>
+                </div>
+            </div>
+
+            <aside class="hero-panel reveal">
+                <p class="panel-label">CURRENTLY EXPLORING</p>
+                <ul>
+                    <li>FastAPI / Flask</li>
+                    <li>Redis & Realtime</li>
+                    <li>Docker & Linux</li>
+                    <li>Web Architecture</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="section-heading reveal">
+                <p class="section-number">01</p>
+                <h2>About</h2>
+            </div>
+
+            <div class="about-grid">
+                <article class="about-card reveal">
+                    <div class="profile-image">
+                        BSG
+                    </div>
+
+                    <div>
+                        <h3>대충 헤더</h3>
+                        <p>대충 본문</p>
+                        <p>대충 본문2</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <h3>Timeline</h3>
+                    <ol class="timeline">
+                        <li>
+                            <span class="timeline-year">2025</span>
+                            <div>
+                                <strong>(주) Axissoft 현장실습</strong>
+                                <p>PHP CodeIgniter 3 / MariaDB 기반 LMS 개발 경험</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2026</span>
+                            <div>
+                                <strong>서울디지텍고등학교 졸업</strong>
+                                <p>인공지능 소프트웨어학과</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2026</span>
+                            <div>
+                                <strong>Codyssey</strong>
+                                <p>AI/SW 개발 과정 진행</p>
+                            </div>
+                        </li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-number">02</p>
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <p class="skill-label">BACKEND</p>
+                        <h3>Server</h3>
+                        <ul>
+                            <li>Express</li>
+                            <li>FastAPI</li>
+                            <li>Flask</li>
+                            <li>CodeIgniter</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <p class="skill-label">DATA / INFRA</p>
+                        <h3>Infrastructure</h3>
+                        <ul>
+                            <li>MySQL / MariaDB</li>
+                            <li>Redis</li>
+                            <li>Docker Compose</li>
+                            <li>Nginx</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <p class="skill-label">FRONTEND</p>
+                        <h3>Web</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="projects">
+            <div class="section-heading reveal">
+                <p class="section-number">03</p>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-toolbar reveal">
+                <p>GitHub 공개 저장소를 불러옵니다.</p>
+                <button class="text-button" id="retry-button" type="button" hidden>다시 시도</button>
+            </div>
+
+            <div class="project-status" id="project-status">
+                프로젝트를 불러오는 중...
+            </div>
+
+            <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <section class="section section-muted" id="contact">
+            <div class="container contact-layout">
+                <div class="contact-copy reveal">
+                    <div class="section-heading left">
+                        <p class="section-number">04</p>
+                        <h2>Contact</h2>
+                    </div>
+                    <p>
+                        프로젝트, 개발 이야기 또는 협업과 관련해
+                        이야기하고 싶다면 메시지를 남겨주세요.
+                    </p>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form" novalidate>
+                    <div class="field">
+                        <label for="name">이름</label>
+                        <input id="name" name="name" type="text" autocomplete="name">
+                        <p class="field-error" id="name-error"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">이메일</label>
+                        <input id="email" name="email" type="email" autocomplete="email">
+                        <p class="field-error" id="email-error"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">메시지</label>
+                        <textarea id="message" name="message" rows="6"></textarea>
+                        <p class="field-error" id="message-error"></p>
+                    </div>
+
+                    <button class="button primary" type="submit">메시지 확인</button>
+                    <p class="form-result" id="form-result"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Bang Seung Gyu</p>
+            <div class="footer-links">
+                <a href="https://github.com/Beda28" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="#hero">Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scroll-top" type="button">↑</button>
+</body>
+
+</html>
